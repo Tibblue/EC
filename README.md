@@ -1,7 +1,7 @@
 # Perfil Engenharia de Conhecimento
 
 ## Análise de Dados
-[Trabalho de Análise de Dados 2018/2019](https://github.com/Tibblue/EC/tree/master/AD)
+[Trabalho de Análise de Dados 2018/2019](https://github.com/Tibblue/EC/tree/master/AD/projeto_AD_grupo2)
 
 ### Contributors
 [Gil Cunha](https://github.com/Nexturn)
