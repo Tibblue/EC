@@ -1,0 +1,51 @@
+ex1
+
+Entidades:
+Genero
+Musica
+Obra
+Artista
+
+Atributos:
+Artista (ID,Nome)
+Obra (Primeiro autor,Tipo suporte,Anotaçoes,Editora,Preço,Data publicaçao)
+Musica (Codigo,Nome,Duraçao,Letra,Tipo,Primeiro Autor)
+Genero (ID,Descriçao)
+
+Relacionamentos:
+Artista <publica> Obra
+Obra <possui> Musica
+Musica <tem> Genero
+
+
+ex2
+
+Entidades:
+Funcionario
+Cargo
+Departamento
+Historico
+Localizaçao
+Pais
+Continente
+
+
+Atributos:
+Funcinario (ID,Salario,Nome,Apelido,Email,Data Admissao)
+Cargo (Designaçao,Salario Min,Salario Max)
+Departamento (Descriçao,Manager)
+Historico (Data Inicio,Data Fim)
+Localizaçao (Nome,Rua,Codigo Postal)
+Pais (Nome)
+Continente (Descriçao)
+
+
+Relaçoes (Cardinalidade):
+Funcionario 1-1 Historico
+Cargo 1-N Historico
+Departamento 1-N Historico
+Funcionario N-1 Cargo
+Funcionario N-1 Departamento
+Departamento N-1 Localizaçao
+Localizaçao N-1 País
+País N-1 Continente

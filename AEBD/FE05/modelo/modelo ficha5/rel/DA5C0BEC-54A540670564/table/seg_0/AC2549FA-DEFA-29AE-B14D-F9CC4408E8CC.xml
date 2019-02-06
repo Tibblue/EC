@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AC2549FA-DEFA-29AE-B14D-F9CC4408E8CC" name="TREINADOR">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<importedID>E56648B8-E7E0-5F98-38E2-9EF627B6C399</importedID>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TREINADOR" id="7D706F33-F13F-2F14-75D8-D9B93877D221">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<importedID>BB7A63E1-A9AC-E04C-670D-6B7C593ACCE0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME" id="245A6B6D-B17E-BC71-519B-E184F960F4AD">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<importedID>B41301D0-401D-957E-D34E-A491596AC272</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CLUBE" id="47E371D1-D320-F64E-AA64-1A5DA4A18B0E">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<importedID>FB92EAB4-FCA4-1A39-19F8-C23939212F57</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D9B2DBF9-6B47-D72A-11C0-FB1421A43173" referredColumn="9B418F3F-C839-F691-C1ED-F9B288203DA4"/>
+</associations>
+</Column>
+<Column name="ID_CARGO" id="A6BD32B2-B891-3082-68F6-99D7BEEA1D6B">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<importedID>651201F0-735F-1435-5773-08C7055E7906</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B7F0B28-72D9-6EB3-5140-06BE83A39ACF" referredColumn="91007D64-3F6D-F017-39D8-46C8AA9F3EF0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FD2F910B-6128-D18A-C08E-90239FD0FEAB" name="TREINADOR_PK">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<importedID>579ADEBC-20E0-FDD9-291A-1A9F1896BB55</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D706F33-F13F-2F14-75D8-D9B93877D221"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E030EB3-8B39-DE0F-9548-28B654F73222" name="TREINADOR_CARGO_FK">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6BD32B2-B891-3082-68F6-99D7BEEA1D6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C68AC0A5-F307-0A55-4F80-2A59F6CD172F" name="TREINADOR_CLUBE_FK">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47E371D1-D320-F64E-AA64-1A5DA4A18B0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

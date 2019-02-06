@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="325F78B0-CAAF-D773-FFEC-E07E74B27A7A" name="PATROCINADOR">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<importedID>E5488034-AA00-CFAE-BD84-596D7454BCCA</importedID>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PATROCINADOR" id="8F1D0085-7C2D-C41E-65F8-B7373B4C37CD">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<importedID>8C2C4B4C-B78D-6D76-28B3-8617A2E857A7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME" id="DACFD56E-7D0B-0C7A-A8BF-D9B0328EE8A9">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<importedID>BC855044-AEAE-127B-E999-11B40C78B9A5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTANTE" id="3A47B703-D669-78A6-025F-D9AE5C262D25">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<importedID>469A8E4A-D2BE-C6F7-612B-1A1720FB37E0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BEF28130-4680-9BE8-3814-BDC88AE877CB" name="PATROCINADOR_PK">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<importedID>21978882-DD18-D9CF-ED36-18CE8C50B6D2</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F1D0085-7C2D-C41E-65F8-B7373B4C37CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

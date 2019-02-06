@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D0C8EF2-C576-944E-DCCE-4DE64C53D5BA" name="CARGO">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:05:47 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CARGO" id="37574433-1B0D-BC32-817A-B66DCCE10499">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:10:03 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESC_CARGO" id="E0464E30-C032-13B7-6529-93A1DB21030A">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:10:03 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F39DCB9A-9E46-B909-EA3B-41E510EB9493" name="CARGO_PK">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:10:03 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37574433-1B0D-BC32-817A-B66DCCE10499"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

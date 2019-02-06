@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0362620A-70A2-B4D7-EF22-0F071C904855" name="LIGA">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<importedID>4616450A-D6B3-84DF-9508-DAB58198D184</importedID>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_LIGA" id="513E4C53-98A6-5903-93D0-FDEC7780BECE">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<importedID>E7B7DA70-8939-F07E-8F67-95F1817A3020</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME" id="24617956-5682-0548-2186-DA80E8020582">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<importedID>FADFDEC0-1C4A-FD90-DB70-095B8616FE96</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANO_FUNDACAO" id="7737F09C-17EF-9018-D09D-7AA57E7133FD">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<importedID>D7457439-1A0E-1E73-0891-E2A7EBAB63E2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PATROCINADOR" id="FCB709B9-626A-3CBE-BA38-A35F6FBFEC39">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<importedID>04774E16-4498-CF8E-18F0-F058D6068476</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="093E8CC9-E359-BFE1-E2A2-B23C6F56473A" referredColumn="8F1D0085-7C2D-C41E-65F8-B7373B4C37CD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="48B69820-1A74-14C0-5E09-866DDB4F1BE5" name="LIGA_PK">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<importedID>2FD159C1-C9FB-C0CD-2D5E-813A1214CCA8</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="513E4C53-98A6-5903-93D0-FDEC7780BECE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BDCF80D7-934A-577E-50D3-99F239622AFF" name="LIGA_PATROCINADOR_FK">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FCB709B9-626A-3CBE-BA38-A35F6FBFEC39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

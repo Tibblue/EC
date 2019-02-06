@@ -1,0 +1,15 @@
+slides aulaPL02:
+- ETL
+- Relational DB (OLTP) vs DW (OLAP)
+- Cursors
+
+slides aulaPL09:
+- Conceito Business intelligence
+- Power BI
+
+ficha 02:
+- Cursors
+
+ficha 04:
+- Cursors
+- Populate - inserts

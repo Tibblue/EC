@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="9B6DC1FA-D96D-034C-D091-22BE14296369" mainViewID="4BC9950B-8987-B62A-851A-7C9379DDDCBC">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 09:56:00 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

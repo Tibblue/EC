@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="093E8CC9-E359-BFE1-E2A2-B23C6F56473A" containerWithKeyObject="0362620A-70A2-B4D7-EF22-0F071C904855" localFKIndex="BDCF80D7-934A-577E-50D3-99F239622AFF" name="LIGA_PATROCINADOR_FK">
+<createdBy>KIKO</createdBy>
+<createdTime>2018-11-09 10:36:41 UTC</createdTime>
+<ownerDesignName>modelo ficha5</ownerDesignName>
+<importedID>21C630A9-08EA-BC65-730C-7EDB0AA3025B</importedID>
+<referredTableLongName>PATROCINADOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>325F78B0-CAAF-D773-FFEC-E07E74B27A7A</referredTableID>
+<keyObject>BEF28130-4680-9BE8-3814-BDC88AE877CB</keyObject>
+<referredKeyID>BEF28130-4680-9BE8-3814-BDC88AE877CB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_PATROCINADOR</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

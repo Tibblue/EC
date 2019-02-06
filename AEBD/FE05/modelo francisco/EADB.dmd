@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="EADB" id="1D9FD661-7940-9613-CDD5-4BF5292D37D9" version="3.5">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 09:54:09 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>1D9FD661-7940-9613-CDD5-4BF5292D37D9</designId>
+</OSDM_Design>

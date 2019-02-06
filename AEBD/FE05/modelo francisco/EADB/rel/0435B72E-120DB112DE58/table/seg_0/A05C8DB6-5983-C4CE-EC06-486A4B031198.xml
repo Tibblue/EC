@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A05C8DB6-5983-C4CE-EC06-486A4B031198" name="CLUBE">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:04:48 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CLUBE" id="C7D3E831-3D16-D76C-0605-BD6FA6F12034">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:18:27 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME" id="312A2947-15F4-F047-9D9C-3E19430069C4">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:18:27 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANO_FUNDACAO" id="ECF4AB6D-81BA-B4C4-6FC5-FCE26CFCE730">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:18:27 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIDADE" id="9495E790-C5A9-4229-2E4F-B58DB61DBC82">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:18:27 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_LIGA" id="F273D627-7990-4555-A5C4-791DE64AEE66">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:19:00 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A0943A13-7C16-8789-D440-DFCF18FAA82A" referredColumn="E7B7DA70-8939-F07E-8F67-95F1817A3020"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F884C171-FD07-7985-3968-B72468E8BAEC" name="CLUBE_PK">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:18:27 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7D3E831-3D16-D76C-0605-BD6FA6F12034"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4E28485-7D95-E3D4-C957-186230CFD22A" name="CLUBE_LIGA_FK">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:19:00 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F273D627-7990-4555-A5C4-791DE64AEE66"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

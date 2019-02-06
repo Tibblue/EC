@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="386FC264-20A8-8135-F26A-5E17CEDA4D99" name="JOGADOR">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:05:35 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_JOGADOR" id="9B823603-221D-CAF4-FAD8-AB64F0C52267">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:23:46 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME" id="79110469-6390-88FD-B4DB-BD97F7CF470E">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:24:24 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDADE" id="84CF607D-6CEF-3179-57C9-A3EA375A7B16">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:24:24 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CLUBE" id="B94C6239-1F63-648A-117F-F33C15ADD1D7">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:24:34 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A19B6AA5-6A76-2311-C5C8-22150DC83A24" referredColumn="C7D3E831-3D16-D76C-0605-BD6FA6F12034"/>
+</associations>
+</Column>
+<Column name="ID_POSICAO" id="62DADEA3-BDFC-5D42-80EA-C4DD9DB6F9DB">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:24:43 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F89830A9-53B2-CC8A-AADD-7CF065FBF7CD" referredColumn="DE8A64A3-1397-0DF0-75D1-A38349CA331E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A86F0BEE-90FE-C6E4-614E-0BC0669FAC0C" name="JOGADOR_PK">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:24:24 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B823603-221D-CAF4-FAD8-AB64F0C52267"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DBD9C6D0-CD98-A3C5-4AAE-2B751D36C3AB" name="JOGADOR_CLUBE_FK">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:24:34 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B94C6239-1F63-648A-117F-F33C15ADD1D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF496513-7A84-51FE-5A28-531696BF36C6" name="JOGADOR_POSICAO_FK">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:24:43 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62DADEA3-BDFC-5D42-80EA-C4DD9DB6F9DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

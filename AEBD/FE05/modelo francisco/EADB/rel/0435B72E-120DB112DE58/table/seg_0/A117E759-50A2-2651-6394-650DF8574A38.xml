@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A117E759-50A2-2651-6394-650DF8574A38" name="POSICAO">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:05:40 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_POSICAO" id="DE8A64A3-1397-0DF0-75D1-A38349CA331E">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:07:53 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESC_POSICAO" id="87C866ED-ED40-F24B-D36F-CF548099E8FC">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:07:53 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="27257A51-810B-0369-832C-58BAA08DA744" name="POSICAO_PK">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:07:53 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE8A64A3-1397-0DF0-75D1-A38349CA331E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

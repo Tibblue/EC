@@ -1,0 +1,31 @@
+Slides DW 1:
+- Definição e motivação de Analise de Dados
+- Data Warehouse
+- Diferença entre OLAP e data mining
+- OLAP
+- Data mining
+------------------------------------------------------------------
+Slides DW 2:
+- O que é um Data Warehouse?
+- Data Warehouse vs SGBD
+- OLAP vs OLTP
+- Porquê Separar um Data Warehouse? 
+- Cubos de Dados
+- Modelação de DW: esquemas, dimensoes, factos, variaveis
+- Operaçoes OLAP: roll-up, drill-down, slice n dice, pivot, dill accross, drill through ...
+- Desenho e Implementação de DW
+- Slowly Changing Dimensions (SCD)
+- Erros comuns na modelaão e implementação de DW
+- ETL e Mapa Lógico
+- Administração e Gestão
+- Problemas
+- Metodo de "4 passos" (bottum-up) para desenvolver esquema dimensional
+--------------------------------------------------------------------
+Slides ETL:
+- Planeamento e Desenho
+- Fluxo de Dados
+---------------------------------------------------------------------
+Refrescamento incremental e diferencial:
+- https://wiki.mandic.com.br/storage-e-backup/backup-online/agente-obm/qual-a-diferenca-entre-backup-incremental-e-diferencial
+- https://www.baxtru.com/2017/06/22/diferenca-backup-incremental-e-diferencial/
+

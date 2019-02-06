@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style> td, th {
+    text-align:center;
+  }
+  </style>
+<meta charset="ISO-8859-1">
+<title>Métricas Role</title>
+<script type="text/javascript" src="convert.js"></script>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<body style="background-color:lightgray;">
+  <h1 align="center">Roles</h1>
+  <p>&nbsp;</p>
+  <table align="center">
+  <tr>
+    <th><a href="file:///C:\Users\Luismf20\Downloads\HTMLJS\HTMLJS\WebContent\Conteudo.html"><font size="4"><font color="gray">Conteúdos</font></font></a></th>
+  </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+	<script>
+	
+	$(document).ready(function(){
+		
+		var test = "http://localhost:8080/WebApp/webresources/generic/role";
+    	$.getJSON(test, function (json) {
+    		var myList = JSON.stringify(json);
+    		var myFinal = JSON.parse(myList);
+    		//var myFinal = JSON.parse(myJSON);
+    		buildHtmlTable('#excelDataTable', myFinal);
+    	});
+	});
+</script>
+  <table id="excelDataTable" border="1" align="center" bgcolor="white">
+  </table>
+  </body>
+</html>

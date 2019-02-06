@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E56648B8-E7E0-5F98-38E2-9EF627B6C399" name="TREINADOR">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 09:58:50 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TREINADOR" id="BB7A63E1-A9AC-E04C-670D-6B7C593ACCE0">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:04:36 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME" id="B41301D0-401D-957E-D34E-A491596AC272">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:04:36 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CLUBE" id="FB92EAB4-FCA4-1A39-19F8-C23939212F57">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:21:42 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6D274907-A453-1D2C-8E50-E89A58B00829" referredColumn="C7D3E831-3D16-D76C-0605-BD6FA6F12034"/>
+</associations>
+</Column>
+<Column name="ID_CARGO" id="651201F0-735F-1435-5773-08C7055E7906">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:21:47 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="30AB18B3-9A29-E95C-72C1-248588B2C2E3" referredColumn="37574433-1B0D-BC32-817A-B66DCCE10499"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="579ADEBC-20E0-FDD9-291A-1A9F1896BB55" name="TREINADOR_PK">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:04:36 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB7A63E1-A9AC-E04C-670D-6B7C593ACCE0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7B8E1701-6716-75F4-530D-CDC1D48701E2" name="TREINADOR_CLUBE_FK">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:21:42 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB92EAB4-FCA4-1A39-19F8-C23939212F57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B054425-10EF-5ACC-5743-D37CD1B9F248" name="TREINADOR_CARGO_FK">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:21:47 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="651201F0-735F-1435-5773-08C7055E7906"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

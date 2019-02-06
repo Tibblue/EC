@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E5488034-AA00-CFAE-BD84-596D7454BCCA" name="PATROCINADOR">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:05:13 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PATROCINADOR" id="8C2C4B4C-B78D-6D76-28B3-8617A2E857A7">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:09:14 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME" id="BC855044-AEAE-127B-E999-11B40C78B9A5">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:09:14 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTANTE" id="469A8E4A-D2BE-C6F7-612B-1A1720FB37E0">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:09:14 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="21978882-DD18-D9CF-ED36-18CE8C50B6D2" name="PATROCINADOR_PK">
+<createdBy>Utilizador</createdBy>
+<createdTime>2018-10-26 10:09:14 UTC</createdTime>
+<ownerDesignName>EADB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C2C4B4C-B78D-6D76-28B3-8617A2E857A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
