@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Homepage</title>
+  <link rel="stylesheet" type="text/css" href="includes/w3.css">
+  <script src="includes/jquery-3.3.1.min.js"></script>
+  <script src="includes/convert.js"></script>
+  <script src="includes/include.js"></script>
+</head>
+<body>
+  <div class="w3-card-4 w3-red">
+    <header class="w3-container w3-center">
+      <h1>Monitor de Base de Dados Oracle</h1>
+    </header>
+  </div>
+  
+  <div w3-include-html="top-bar.html"></div>
+  <script>includeHTML();</script>
+
+  <div class="w3-container">
+    <div class="w3-center">
+      <h3>Administração e Exploração de Bases de Dados</p>
+      <h6>Perfil de Engenharia do Conhecimento, Mestrado Integrado em Engenharia Informática, da Universidade do Minho</p>
+    </div>
+
+    <div class="w3-center">  
+        <h2>
+          <a class="w3-button w3-red w3-hover-white w3-hover-text-red w3-round-xlarge w3-ripple" href="DB.html">Monitor - Oracle DB</a>
+        </h2>
+    </div>
+
+    <h3 id="DB_name" class="w3-center">Name: </h3>
+    <h3 id="DB_platform" class="w3-center">Platform: </h3>
+    <h3 id="DB_session" class="w3-center">Sessions: </h3>
+    <h3 id="DB_dataStorage" class="w3-center">Data Storage (GB): </h3>
+
+    <h3>Conteúdos desenvolvidos pelos alunos: </h3>
+    <ul>
+      <li class="w3-bar">
+        <img src="images/francisco.jpg" class="w3-bar-item w3-circle" style="width:85px">
+        <div class="w3-bar-item">
+          <span class="w3-large">A77688</span><br>
+          <span>Francisco Matos</span>
+        </div>
+      </li>
+      <li class="w3-bar">
+        <img src="images/kiko.png" class="w3-bar-item w3-circle" style="width:85px">
+        <div class="w3-bar-item">
+          <span class="w3-large">A78416</span><br>
+          <span>Francisco Oliveira</span>
+        </div>
+      </li>
+      <li class="w3-bar">
+        <img src="images/gil.png" class="w3-bar-item w3-circle" style="width:85px">
+        <div class="w3-bar-item">
+          <span class="w3-large">A77249</span><br>
+          <span>Gil Cunha</span>
+        </div>
+      </li>
+      <li class="w3-bar">
+        <img src="images/luis.jpg" class="w3-bar-item w3-circle" style="width:85px">
+        <div class="w3-bar-item">
+          <span class="w3-large">A74819</span><br>
+          <span>Luis Costa</span>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+  <footer class="w3-container w3-red">Ano Letivo 2018/2019</footer>
+
+  <!-- Tabela -->
+  <table id="excelDataTable" class="w3-table-all"></table>
+  <!-- Script -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var test = 'http://localhost:8080/ords/grupo2/db/?q={"$orderby":{"id_db":"ASC"}}'
+      $.getJSON(test, function (json) {
+        // DEBUG
+        // console.log("JSON returnado pela BD")
+        // console.dir(json)
+        console.log("JSON apenas com a lista de objetos")
+        console.dir(json.items)
+
+        // LOAD text
+        var length = json.items.length-1
+        $("#DB_name").append(json.items[length].name);
+        $("#DB_platform").append(json.items[length].platform);
+        $("#DB_session").append(json.items[length].number_sessions);
+        $("#DB_dataStorage").append((json.items[length].data_storage/1073741824).toFixed(1));
+      });
+    });
+  </script>
+
+</body>
+</html>

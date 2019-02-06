@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" http-equiv="refresh" content="15">
+  <title>Tablespace</title>
+  <link rel="stylesheet" type="text/css" href="includes/w3.css">
+  <script src="includes/jquery-3.3.1.min.js"></script>
+  <script src="includes/convert.js"></script>
+  <script src="includes/include.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+  <div class="w3-card-4 w3-red">
+    <header class="w3-container w3-center">
+      <h1>Tablespace</h1>
+    </header>
+  </div>
+
+  <div w3-include-html="top-bar.html"></div>
+  <script>includeHTML();</script>
+
+  <!-- Gráfico -->
+  <div id="chartContainer" style="height: 500px; width: 100%;"></div>
+  <!-- Tabela -->
+  <table id="excelDataTable" class="w3-table-all"></table>
+  <!-- Script -->
+	<script type="text/javascript">
+    $(document).ready(function(){
+      var test = 'http://localhost:8080/ords/grupo2/tablespace/?q={"$orderby":{"id_tablespace":"ASC"}}'
+      $.getJSON(test, function (json) {
+        // DEBUG
+        // console.log("JSON returnado pela BD")
+        // console.dir(json)
+        console.log("JSON apenas com a lista de objetos")
+        console.dir(json.items)
+        
+        // LOAD DA TABELA
+        buildHtmlTable('#excelDataTable', json.items);
+
+        // LOAD DO GRAFICO
+        $(document).ready(function () {
+          var dataPointsBlock = []
+          var dataPointsMax = []
+          for(var i=0 ; i<json.items.length; i++){
+            // console.log(json.items[i])
+            if(json.items[i].name=="TP_AEBD"){
+              dataPointsBlock.push({label:json.items[i].ts_timestamp, y:json.items[i].block_size})
+              // dataPointsMax.push({label:json.items[i].ts_timestamp, y:json.items[i].max_size})
+            }
+          }
+          var chart = new CanvasJS.Chart("chartContainer", {
+	          animationEnabled: true,
+            title:{
+              text: "Tablespace TP_AEBD"              
+            },
+            axisX: {
+              title: "TimeStamp"
+            },
+            axisY1: {
+              title: "Block size"
+            },
+            data: [
+              {
+                type: "column",  // Change type to "column", "doughnut", "line", "splineArea", etc.
+                dataPoints: dataPointsBlock
+              }
+            ]
+          });
+          chart.render();
+        })
+      });
+    });
+  </script>
+  
+</body>
+</html>

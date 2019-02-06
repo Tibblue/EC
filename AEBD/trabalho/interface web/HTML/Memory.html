@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" http-equiv="refresh" content="15">
+  <title>Memory</title>
+  <link rel="stylesheet" type="text/css" href="includes/w3.css">
+  <script src="includes/jquery-3.3.1.min.js"></script>
+  <script src="includes/convert.js"></script>
+  <script src="includes/include.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+  <div class="w3-card-4 w3-red">
+    <header class="w3-container w3-center">
+      <h1>Memory</h1>
+    </header>
+  </div>
+
+  <div w3-include-html="top-bar.html"></div>
+  <script>includeHTML();</script>
+
+  <!-- Gráfico -->
+  <div id="pieContainer" style="height: 500px; width: 100%;"></div>
+  <div id="chartContainer" style="height: 500px; width: 100%;"></div>
+  <!-- Tabela -->
+  <table id="excelDataTable" class="w3-table-all"></table>
+  <!-- Script -->
+	<script type="text/javascript">
+    $(document).ready(function(){
+      var test = 'http://localhost:8080/ords/grupo2/memory/?q={"$orderby":{"id_mem":"ASC"}}'
+      $.getJSON(test, function (json) {
+        // DEBUG
+        // console.log("JSON returnado pela BD")
+        // console.dir(json)
+        console.log("JSON apenas com a lista de objetos")
+        console.dir(json.items)
+        
+        // LOAD DA TABELA
+        buildHtmlTable('#excelDataTable', json.items);
+
+        // LOAD DO GRAFICO
+        // pie
+        $(document).ready(function () {
+          var chart = new CanvasJS.Chart("pieContainer", {
+            theme: "light1", // "light1", "light2", "dark1", "dark2"
+            exportEnabled: true,
+            animationEnabled: true,
+            title: {
+              text: "Total Size = "+json.items[json.items.length-1].total_size_mb+"MB"
+            },
+            data: [{
+              type: "pie",
+              startAngle: 0,
+              toolTipContent: "<b>{label}</b>: {y}",
+              showInLegend: "true",
+              legendText: "{label}",
+              indexLabelFontSize: 16,
+              indexLabel: "{label} - {y}",
+              dataPoints: [
+                { y: json.items[json.items.length-1].free_size_mb , label:"Free"},
+                { y: json.items[json.items.length-1].used_size_mb, label:"Used"}
+              ]
+            }]
+          });
+          chart.render();
+        })
+        // chart
+        $(document).ready(function () {
+          var dataPoints = []
+          for(var i=0 ; i<json.items.length; i++){
+            // console.log(json.items[i])
+            dataPoints.push({label:json.items[i].mem_timestamp, y:json.items[i].used_size_mb})
+          }
+          var chart = new CanvasJS.Chart("chartContainer", {
+            title:{
+              text: "Memory"              
+            },
+            axisX: {
+              title: "TimeStamp"
+            },
+            axisY: {
+              title: "Used"
+            },
+            data: [
+              {
+                type: "column",  // Change type to "column", "doughnut", "line", "splineArea", etc.
+                dataPoints: dataPoints
+              }
+            ]
+          });
+          chart.render();
+        })
+      });
+    });
+  </script>
+  
+</body>
+</html>
