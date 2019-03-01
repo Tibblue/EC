@@ -10,7 +10,7 @@ Dentro do `package.json` temos:
     * Exemplo
         ```
         "scripts":{
-            "start": "npm server.js"
+            "start": "npm server.js",
             "dev": "nodemon server.js"
         }
         ```
