@@ -1,14 +1,6 @@
-# CrashCourse
-Onde tudo se torna realidade.
+# [Voltar ao CrashCourse](../crash.md)
 
-## [express-generated](express-generated/express-generated.md)
-Esta pasta foi gerada com o comando `$express --view=pug express-generated`. (*express-generated* é o nome que dei a pasta)
-
-Este comando gera um server básico, simples e pronto a usar.
-
-Esta pasta pronta a usar segue um layout, que é aceite por todos e ajuda a criar um ambiente comum e civilizado para todos. Cada pasta tem um proposito e um tipo de documento a ser lá colocado. Passo a explicar então.
-
-## [basicNodeJS](basicNodeJS/basicNodeJS.md)
+# basicNodeJS
 Esta pasta tambem foi gerada automaticamente, mas fiz algumas alterações.
 
 Esta servidor tem:
