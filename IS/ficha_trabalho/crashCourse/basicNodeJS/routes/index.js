@@ -32,16 +32,17 @@ router.get('/files', (req, res) => {
 router.post("/file/guardar", (req,res) => {
   var form = new formidable.IncomingForm()
   form.parse(req, (erro, fields, files) => {
+    // // Mega debug town.
     // console.log("-----")
-    // console.log(form)
+    // console.log(form) // debug - formulario completo
     // console.log("-----")
-    // console.log(files)
+    // console.log(files) // debug - lista de ficheiros
     // console.log("-----")
-    // console.log(fields)
+    // console.log(fields) // debug - lista de campos
     // console.log("-----")
-    var fenviado = files.file.path
-    var fnovo = myPublic + '/uploaded/' + files.file.name
-    var ficheiro = files.file.name
+    var fenviado = files.ficheiro.path
+    var fnovo = myPublic + '/uploaded/' + files.ficheiro.name
+    var ficheiro = files.ficheiro.name
     var descricao = fields.descricao
     var stuff = JSON.parse('{"ficheiro":"' + ficheiro + '","descricao":"' + descricao + '"}')
     var error = ''
@@ -68,7 +69,8 @@ router.post("/file/guardar", (req,res) => {
             }
             else console.log("Erro: " + erro)
           })
-          res.json(stuff)
+          // res.json(stuff) // devolve o json q foi guardado
+          res.redirect('/') // redireciona de volta á pagina inicial
         }
       }
     })
