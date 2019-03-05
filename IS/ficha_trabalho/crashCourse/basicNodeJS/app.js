@@ -35,9 +35,9 @@ app.use(express.static(path.join(__dirname, 'public'))); //é aqui que a pasta p
 
 
 // ROUTERS
-app.use('/api/users', './routes/api/users')
-app.use('/', './routes/index');
-app.use('/users', './routes/users');
+// app.use('/api/users', require('./routes/api/users'))
+app.use('/', require('./routes/index'));
+app.use('/users', require('./routes/users'));
 
 
 /////  IGNORE THIS  /////
