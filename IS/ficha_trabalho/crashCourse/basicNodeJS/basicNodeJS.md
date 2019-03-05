@@ -8,3 +8,14 @@ Esta servidor tem:
 * algumas ***routes*** para ilustrar como devem arrumar as routas organizadamente
 * ***javascripts*** simples. acreditem, voces não querem ver jQuery a vossa frente, e se poderem reduzir o uso de javascripts, menos coisas estranhas vão acontecer no website.
 * ***app.js*** a importar vários *packages*. Há varias categorias de *packages*, e alguns tem de ser colocados no lugar correto do *app.js* para funcionarem (olá *middlewares*)
+
+## Layout
+Layout da pasta é o mesmo de antes. Mas com mais conteudo :P
+
+## TODO app.js briefing
+
+## TODO pug & w3.css quick intro
+[Pug Website](https://pugjs.org/api/getting-started.html)
+
+## TODO JavaScript quick & notCancerous intro
+
