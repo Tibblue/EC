@@ -35,6 +35,11 @@ Coming soon :D
 
 [w3.css Basics](https://www.w3schools.com/w3css/)
 
+Para usar o CSS no Pug, colocamos o elementos seguido da class do CSS que lhe queremos atribuir, separado por .
+``` pug
+label.w3-text-indigo
+```
+
 **Pug** é uma linguagem alternativa a HTML, existem imensas, eu apenas aprendi esta e é good, recomendo XD
 
 [Pug Website](https://pugjs.org/api/getting-started.html)
@@ -51,12 +56,12 @@ Em Pug fica
 p Paragrafo
 ```
 Outra capacidade do Pug é fazer ***extends*** e ***include*** de outros pugs.
+* O *extends* permite dizer que o ficheiro é uma parte de outro maior.
+* O *include* permite incluir um ficheiro mais pequeno no meio de um maior.
 
-O *extends* permite dizer que o ficheiro é uma parte de outro maior.
-
-O *include* permite incluir um ficheiro mais pequeno no meio de um maior.
-
-Tem exemplos disto nos pugs. O index faz *extends* do layout, porque o layout tem o cabeçalho do Pug e o index tem o body. O index faz *include* do footer para usa-lo como parte inferior da página.
+Tem exemplos disto nos pugs.
+* O index faz *extends* do layout, porque o layout tem o cabeçalho do Pug e o index tem o body.
+* O index faz *include* do footer para usa-lo como parte inferior da página.
 
 O ***block*** serve para definir zonas que podem ser definidas mais tarde. Por exemplo, o layout tem o block content, que é mais tarde definido no index. Há ainda mais capacidades do block, #busquem_na_documentação.
 
