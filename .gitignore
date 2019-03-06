@@ -1,2 +1,3 @@
 # Node.JS ignores
 **/node_modules/
+**/nodeJS_testing/
