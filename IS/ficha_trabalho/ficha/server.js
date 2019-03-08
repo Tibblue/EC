@@ -10,6 +10,7 @@ const app = express();
 
 app.use(bodyParser.json());
 
+app.use('/api/sitBenefData', authMiddleware, privateRoutes);
 app.use('/api/protected', authMiddleware, privateRoutes);
 app.use('/api', publicRoutes);
 

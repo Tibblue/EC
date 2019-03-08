@@ -7,6 +7,8 @@ const router = express.Router();
 router.post('/getToken', (req, res) => {
   const { numLocal, nif, password} = req.body;
 
+  console.log(req.body);
+
   if(!nif || !password || !numLocal)
     return res.status(200).json({error:'Campos em falta'});
 

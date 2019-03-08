@@ -1,16 +1,15 @@
 module.exports = {
   benefByADSE:{
-    '123123123':{
-      nome:'Teste1',
-      nif:'232123333',
+    '123123123':{nome:'Teste1',nif:'232123333',
       localidade:'Braga',
-      ativo:true,
+      ativo:true
     },
     '434312088':{
       nome:'Teste2',
       nif:'132153234',
       localidade:'Braga',
-      ativo:false,
+      ativo: {data: '08/03/2019',
+              direito:false}
     },
   },
   benefByNif:{
@@ -24,7 +23,8 @@ module.exports = {
       nome:'Teste2',
       adse:'434312088',
       localidade:'Braga',
-      ativo:false,
+      ativo: {data: '08/03/2019',
+              direito:true}
     },
   },
   allADSE:[123123123, 123123123],
