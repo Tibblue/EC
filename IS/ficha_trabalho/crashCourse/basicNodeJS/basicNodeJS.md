@@ -26,9 +26,46 @@ Someday brothers XDDD
 
 ## Ferramentas e ficheiros importantes
 
-### *TODO app.js briefing*
+### *app.js briefing*
+`app.js` é onde definimos as coisas mais importantes do servidor como *imports de packages* e como usa-los, *routes*, etc.
 
-Coming soon :D
+Vamos ver como definir as routes principais, como importas packages e como usa-las.
+
+#### Routes no app.js
+```js
+// ROUTES
+app.use('/',        require('./routes/index'));
+app.use('/users',   require('./routes/users'));
+app.use('/api/users', require('./routes/api/users'))
+```
+Neste excerto das routes do app.js, vemos 3 rotas definidas.
+
+Para definir uma *route* usamos o `app.use(<server_path>,<file_path>)`.
+
+O **server_path** é o path par aceder a esta route.
+Por exemplo, a primeira route definida diz que o **server_path** é `'/'` (no browser escreveriamos `localhost:<port>/`). O `'/'` é a nossa ***root*** do servidor. É um lugar especial no coração do nosso servidor.
+
+Depois temos o **file_path** é o path para o ficheiro no nosso filesystem que vai dizer ao servidor o que fazer quando alguem aceder a esta route. Por exemplo, a primeira route definida diz que o **file_path** é `require('./routes/index')`, onde`'./routes/index'` é o path a começar na root da pasta até ao ficheiro e o `require()` é apenas a maneira de dizer que precisamos desse ficheiro (não questionem porque XD)
+
+#### Packages
+```js
+// IMPORTS
+var express = require('express');
+var cookieParser = require('cookie-parser');
+// Definir o Express (aka parte crucial do servidor)
+var app = express();
+// Dizer ao Express (aka app) para usar o CookieParser
+app.use(cookieParser());
+```
+Neste exemplo, temos primeiramente o *import* de packages, seguido do seu uso.
+
+Para usar uma *package* temos de a importar usando o `require('<package_name>')` onde ***package_name*** é o nome da package (wow :o), normalmente igual ao nome que usaram para instalar o package com o npm. Depois de o importar, temos ainda de o associar a uma var, para o usarmos mais tarde.
+
+Depois de importado podemos usalo.
+
+Por exemplo, fazendo `var app = express()` usamos o package *express* para gerar uma app que vai servir como base para o nosso servidor. e depois fazermos `app.use(cookieParser())` para dizer à nossa app (aka servidor aka express) para usar o *cookieParser* que foi anteriormente importado.
+
+NOTA: Podemos importar packages em qualquer ficheiro, não apenas no app.js (exemplo: ficheiros das routes)
 
 ### *Pug & CSS quick intro*
 **CSS** (Cascading Style Sheets) são ficheiros que permitem alterar propriedades de elementos de uma página HTML e assim tornar uma página visualmente diferente. Para uma mesma página HTML, se alterassemos apenas o seu CSS esta pode ficar ***completamente diferente***. A nivel de CSS vamos usar o `w3.css` por ser o que sempre usei, ser simples e fazer coisas porreiras.
