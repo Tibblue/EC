@@ -16,3 +16,14 @@ Esta servidor tem:
 * algumas ***routes*** para ilustrar como devem arrumar as routas organizadamente
 * ***javascripts*** simples. acreditem, voces não querem ver jQuery a vossa frente, e se poderem reduzir o uso de javascripts, menos coisas estranhas vão acontecer no website.
 * ***app.js*** a importar vários *packages*. Há varias categorias de *packages*, e alguns tem de ser colocados no lugar correto do *app.js* para funcionarem (olá *middlewares*)
+
+### coisas novas (até para mim XD)
+
+* env variables
+  * [Artigo](https://www.twilio.com/blog/working-with-environment-variables-in-node-js-html)
+  * [Documentação](https://nodejs.org/dist/latest-v8.x/docs/api/process.html#process_process_env)
+* JWT - [npm documentation](https://www.npmjs.com/package/jsonwebtoken)
+* module.exports
+  * [Artigo](https://www.tutorialsteacher.com/nodejs/nodejs-module-exports)
+  * [Artigo](https://www.sitepoint.com/understanding-module-exports-exports-node-js/)
+  * [Documentação](https://nodejs.org/api/modules.html#modules_module_exports)

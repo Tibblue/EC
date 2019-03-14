@@ -11,6 +11,14 @@ Esta servidor tem:
 
 ## O que tem este Server? :o
 
+- [x] File Upload
+- [ ] Autenticação
+- [x] Ferramentas e ficheiros importantes
+  - [x] app.js briefing
+  - [x] Pug & CSS quick intro
+  - [x] jQuery (& JavaScript) quick intro
+
+
 ### *File Upload*
 Este server tem na sua *root* (aka path **"/"**) formularios para File Upload.
 
