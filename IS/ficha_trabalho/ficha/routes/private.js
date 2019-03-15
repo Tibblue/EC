@@ -3,7 +3,7 @@ const router = express.Router();
 const {benefByNif, benefByADSE} = require('../data/beneficiarios');
 
 
-router.get('/beneficiarios', (req, res) =>{
+router.get('/sitBenefData', (req, res) =>{
   const {nif} = req.query;
 
   if(!nif)
@@ -12,7 +12,7 @@ router.get('/beneficiarios', (req, res) =>{
 });
 
 
-router.get('/ativo', (req,res) => {
+router.get('/ativos', (req,res) => {
   const {nif,data} = req.query;
 
   if(!nif || !data)
@@ -28,6 +28,13 @@ router.get('/ativo', (req,res) => {
     return res.status(200).send("OK");
   else
     return res.status(200).send("Espirra");
+});
+
+
+router.post('/insertDoc', (req, res) =>{
+  const {tipo,data,nif,num_local,nub, valor_total,num_doc,num_ordem,num_devolucao,num_pedido,linhas, pdf, password} = req.query;
+
+
 });
 
 module.exports = router;

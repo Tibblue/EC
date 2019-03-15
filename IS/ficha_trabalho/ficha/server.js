@@ -18,7 +18,6 @@ app.use(bodyParser.json());
 
 
 ///// Routes
-// app.use('/api/sitBenefData', authMiddleware, privateRoutes);
 app.use('/api/protected', authMiddleware, privateRoutes);
 app.use('/api', publicRoutes);
 app.use('/testing',require('./routes/testing'))
