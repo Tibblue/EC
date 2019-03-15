@@ -12,6 +12,13 @@ dotenv.config();
 // Cria o servidor
 const app = express();
 
+// Mongo connect
+var mongoose = require('mongoose')
+mongoose
+    .connect('mongodb://127.0.0.1:27017/adse', {useNewUrlParser: true})
+    .then(() => console.log('Mongo status: ' + mongoose.connection.readyState))
+    .catch(() => console.log('Mongo: erro na conexao!!!'))
+
 
 ///// Middleware
 app.use(bodyParser.json());
